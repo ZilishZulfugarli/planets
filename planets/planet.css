@@ -1,0 +1,40 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-color: #111;
+  }
+  
+  .sun {
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 10s linear infinite;
+  }
+  .planet {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit 5s linear infinite, rotate 6s linear infinite reverse;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes orbit {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
